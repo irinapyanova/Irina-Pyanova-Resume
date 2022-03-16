@@ -19,6 +19,8 @@
 
 .lead-container {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   margin-bottom: 50px;
 }
 
@@ -185,4 +187,66 @@
 
 .skills-item {
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    display: block;
+    width: 100%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .lead-container {
+    display: block;
+    text-align: center;
+  }
+
+  .lead-info {
+    margin: 20px 0 40px 0;
+  }
+
+  .resume-title {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .resume-item {
+    margin-bottom: 30px;
+  }
+
+  .year {
+    margin-right: 15px;
+  }
+
+  .resume-text-icon {
+    display: none;
+  }
+
+  .resume-section-projects li {
+    display: block;
+    ;
+  }
+
+  .aside-info {
+    padding: 30px 20px;
+  }
+
+  .aside-section {
+    margin-bottom: 30px;
+  }
+
+  .aside-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .skills-list {
+    margin-left: 20px;
+  }
+
+  .skills-item:last-child {
+    margin-bottom: 0;
+  }
 }
