@@ -5,7 +5,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.main-container {
+.container {
   display: flex;
   width: 1280px;
   margin: 0 auto;
@@ -17,50 +17,45 @@
   color: #666;
 }
 
-.lead-container {
+.lead {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   margin-bottom: 50px;
 }
 
-.lead-pic {
-  width: 300px;
-  height: 300px;
-}
-
-.lead-info {
+.lead__info {
   margin-left: 50px;
 }
 
-.lead-title {
+.lead__title {
   margin-bottom: 15px;
-  background: -webkit-linear-gradient(225deg, #4451a3 25%, #00b1e7 79%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
+  background: -webkit-linear-gradient(225deg, #4451a3 25%, #00b1e7 79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.lead-heading {
+.lead__heading {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.lead-contacts {
+.contacts {
   list-style: none;
 }
 
-.contact-item {
+.contact__item {
   display: flex;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
-.list-icon {
+.contact__item-icon {
   display: block;
   width: 20px;
   height: 20px;
@@ -68,22 +63,27 @@
   background-size: contain;
 }
 
-.contacts-link {
+.contacts__item-link {
   color: inherit;
   text-decoration: none;
 }
 
-.contacts-link:hover {
+.contacts__item-link:hover {
   background: -webkit-linear-gradient(225deg, #4451a3 60%, #00b1e7 79%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.resume-section {
+.lead__pic {
+  width: 300px;
+  height: 300px;
+}
+
+.resume__section {
   margin-bottom: 40px;
 }
 
-.resume-title {
+.resume__section-title {
   margin-left: 105px;
   margin-bottom: 40px;
   background: -webkit-linear-gradient(225deg, #4450a2 60%, #00b1e7 79%);
@@ -94,16 +94,16 @@
   text-transform: uppercase;
 }
 
-.resume-list {
+.resume__list {
   list-style: none;
 }
 
-.resume-item {
+.resume__item {
   display: flex;
   margin-bottom: 40px;
 }
 
-.year {
+.resume__year {
   flex-basis: 10%;
   font-size: 18px;
   font-weight: 700;
@@ -111,7 +111,7 @@
   opacity: 0.7;
 }
 
-.resume-text-icon {
+.resume__icon {
   display: inline-block;
   flex-basis: 5%;
   width: 25px;
@@ -121,18 +121,18 @@
   background-repeat: no-repeat;
 }
 
-.resume-text {
+.resume__text {
   flex-basis: 85%;
 }
 
-.resume-text-title {
+.resume__text-title {
   margin-bottom: 15px;
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: 700;
 }
 
-.resume-text-info {
+.resume__text-info {
   line-height: 1.5;
 }
 
@@ -148,49 +148,49 @@
   -webkit-text-fill-color: transparent;
 }
 
-.resume-section-projects li {
+.resume__item.resume__item--projects {
   justify-content: flex-end;
 }
 
-.project-link {
+.resume__project-link {
   color: inherit;
 }
 
-.project-link:hover {
+.resume__project-link:hover {
   background: -webkit-linear-gradient(225deg, #4451a3 60%, #00b1e7 79%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.aside-info {
+.aside {
   flex-basis: 35%;
   padding: 60px;
   color: #fff;
   background: linear-gradient(225deg, #4451a3 25%, #00b1e7 79%);
 }
 
-.aside-section {
+.aside__section {
   margin-bottom: 50px;
 }
 
-.aside-title {
+.aside__title {
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.about-me-info {
+.aside__text {
   font-size: 16px;
   line-height: 2;
 }
 
-.skills-item {
+.aside__item {
   margin-bottom: 15px;
 }
 
 @media (max-width: 768px) {
-  .main-container {
+  .container {
     display: block;
     width: 100%;
   }
@@ -199,53 +199,58 @@
     padding: 10px;
   }
 
-  .lead-container {
+  .lead {
     display: block;
     text-align: center;
   }
 
-  .lead-info {
+  .lead__info {
     margin: 20px 0 40px 0;
   }
 
-  .resume-title {
+  .contacts {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .resume__section-title {
     margin-left: 0;
     margin-bottom: 20px;
   }
 
-  .resume-item {
+  .resume__item {
     margin-bottom: 30px;
   }
 
-  .year {
+  .resume__year {
     margin-right: 15px;
   }
 
-  .resume-text-icon {
+  .resume__icon {
     display: none;
   }
 
-  .resume-section-projects li {
+  .resume__item.resume__item--projects {
     display: block;
   }
 
-  .aside-info {
+  .aside {
     padding: 30px 20px;
   }
 
-  .aside-section {
+  .aside__section {
     margin-bottom: 30px;
   }
 
-  .aside-section:last-child {
+  .aside__section:last-child {
     margin-bottom: 0;
   }
 
-  .skills-list {
+  .aside__list {
     margin-left: 20px;
   }
 
-  .skills-item:last-child {
+  .aside__item:last-child {
     margin-bottom: 0;
   }
 }
