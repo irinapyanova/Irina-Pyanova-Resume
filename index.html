@@ -1,178 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <title>Резюме</title>
-  </head>
 
-  <body>
-    <div class="container">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Резюме</title>
+</head>
 
-      <main class="main">
-        <section class="lead">
-          <div class="lead__info">
-            <h1 class="lead__title">Ирина Пьянова</h1>
-            <h2 class="lead__heading">Frontend Developer</h2>
-            <ul class="contacts">
-              <li class="contact__item">
-                <i class="contact__item-icon" style="background-image: url('img/icon-phone.svg');"></i>
-                <a href="tel:+79052877853" class="contacts__item-link">+79052877853</a>
-              </li>
+<body>
+  <div class="container">
 
-              <li class="contact__item">
-                <i class="contact__item-icon" style="background-image: url('img/icon-mail.svg');"></i>
-                <a href="mailto:irina.vita96@mail.ru" class="contacts__item-link">irina.vita96@mail.ru</a>
-              </li>
-
-              <li class="contact__item">
-                <i class="contact__item-icon" style="background-image: url('img/icon-github.svg');"></i>
-                <a href="https://github.com/irinapyanova" class="contacts__item-link">GitHub Profile</a>
-              </li>
-
-              <li class="contact__item">
-                <i class="contact__item-icon" style="background-image: url('img/icon-location.png');"></i>
-                Россия, Санкт-Петербург
-              </li>
-            </ul>
-          </div>
+    <main class="main">
+      <section class="lead">
+        <div class="lead__info">
           <img src="img/resume-pic.jpg" alt="Фотография Ирины Пьяновой" class="lead__pic">
-        </section>
-
-        <section class="resume">
-          <div class="resume__section">
-            <h3 class="resume__section-title">Опыт работы</h3>
-            <ul class="resume__list">
-              <li class="resume__item">
-                <span class="resume__year">2022</span>
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">Пока пусто</h4>
-                  <p class="resume__text-info">Здесь должно что-то появиться</p>
-                </div>
-              </li>
-            </ul>
+          <div class="lead__name">
+            <h1 class="lead__title">Ирина Пьянова</h1>
+            <h2 class="lead__heading">Frontend-разработчик из Санкт-Петербурга</h2>
           </div>
-
-          <div class="resume__section">
-            <h3 class="resume__section-title">Образование и курсы</h3>
-            <ul class="resume__list">
-              <li class="resume__item">
-                <span class="resume__year">2014 - 2021</span>
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">Северо-Западный государственный медицинский университет имени И. И. Мечникова</h4>
-                  <p class="resume__text-info">Специальность: лечебное дело</p>
-                </div>
-              </li>
-
-              <li class="resume__item">
-                <span class="resume__year">2021</span>
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">Курс в школе Бруноям - "Веб-разработчик с нуля"</h4>
-                  <p class="resume__text-info">Изучение верстки, препроцессора SCSS, адаптивный дизайн, базовые знания по JavaScript, работа с jQuery</p>
-                  <a href="files/certificate-pyanova.pdf" class="diploma-link">Электронный сертификат</a>
-                </div>
-              </li>
-
-              <li class="resume__item">
-                <span class="resume__year">2022</span>
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">Курс Ивана Петриченко на Udemy - "Полный курс по JavaScript + React"</h4>
-                  <p class="resume__text-info">Изучение всех основных концепций JavaScript и React c закреплением информации на практике. На данный момент закончила раздел по JS, начала изучать React.</p>
-                  <a href="https://www.udemy.com/course/javascript_full/" class="diploma-link">Ссылка на курс</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="resume__section">
-            <h3 class="resume__section-title">Мои проекты</h3>
-            <ul class="resume__list">
-              <li class="resume__item resume__item--projects">
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">
-                    <a href="https://irinapyanova.github.io/stay-healthy/" class="resume__project-link">Stay Healthy</a>
-                  </h4>
-                  <p class="resume__text-info">Мой первый полностью самостоятельно сверстанный проект - одностраничный лендинг на препроцессоре SCSS с адаптивным дизайном. Также впервые писала код на чистом JavaScript -
-                  самое трудное в данном проекте для меня была работа со слайдером Swiper - в частности с его адаптивным дизайном.</p>
-                </div>
-              </li>
-
-              <li class="resume__item resume__item--projects">
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">
-                    <a href="https://irinapyanova.github.io/Scooter-shop/" class="resume__project-link">Scooter Shop</a>
-                  </h4>
-                  <p class="resume__text-info">Базовый одностраничный лендинг, сверстанный по технологии БЭМ на препроцессоре SCSS с использованием таск-менеджера Gulp.</p>
-                </div>
-              </li>
-
-              <li class="resume__item resume__item--projects">
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">
-                    <a href="https://irinapyanova.github.io/butterfly-shop-pyanova/" class="resume__project-link">Butterfly Shop</a>
-                  </h4>
-                  <p class="resume__text-info">Многостраничный сайт, сверстан во время обучения в школе Бруноям. При работе впервые столкнулась с: адаптивным дизайном (desktop-first),
-                  препроцессором SCSS, JavaScript в форме библиотеки jQuery (создание меню навигациии на мобильной версии, слайдер с помощью плагина slick и другое).</p>
-                </div>
-              </li>
-
-              <li class="resume__item resume__item--projects">
-                <i class="resume__icon"></i>
-                <div class="resume__text">
-                  <h4 class="resume__text-title">
-                    <a href="https://irinapyanova.github.io/Table-JS/" class="resume__project-link">JavaScript Table</a>
-                  </h4>
-                  <p class="resume__text-info">Таблица, построенная на основе данных JSON, с функцией фильтрации
-                  данных колонок, возможностью скрытия колонок и редактирования данных ячеек. Первая самостоятельная
-                  работа с HTML-таблицами, fetch API, алгоритмом сортировки, постраничным выводом данных.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-
-      <aside class="aside">
-        <div class="aside__section">
-          <h3 class="aside__title">О себе</h3>
-          <p class="aside__text">Меня зовут Ира, мне 26 и я начинающий frontend-разработчик.
-            Начала серьезно интересоваться web-разработкой примерно 5 месяцев назад, в данной сфере меня вдохновляет возможность постоянно развиваться, совершенствоваться и создавать продукты,
-            полезные для людей. </p>
         </div>
+      </section>
 
-        <div class="aside__section">
-          <h3 class="aside__title">Языки</h3>
-          <p class="aside__text">Английский - B2 (Upper-Intermediate)</p>
-        </div>
+      <section class="resume">
+        <div class="resume__section" id="projects">
+          <h3 class="resume__section-title">Мои проекты</h3>
+          <ul class="resume__list">
+            <li class="resume__item resume__item--projects">
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">
+                  <a target="_blank" href="https://irinapyanova.github.io/stay-healthy/"
+                    class="resume__project-link">Stay Healthy</a>
+                </h4>
+                <p class="resume__text-info">Мой первый полностью самостоятельно сверстанный проект - одностраничный
+                  лендинг на SCSS с адаптивным дизайном. Также впервые писала код на чистом JavaScript - самое трудное в
+                  данном проекте для меня была работа со слайдером Swiper - в частности с его адаптивным дизайном.</p>
+              </div>
+            </li>
 
-        <div class="aside__section">
-          <h3 class="aside__title">Навыки</h3>
-          <ul class="aside__list">
-            <li class="aside__item">HTML5, CSS3</li>
-            <li class="aside__item">БЭМ</li>
-            <li class="aside__item">SCSS</li>
-            <li class="aside__item">Адаптивный дизайн</li>
-            <li class="aside__item">JavaScript (ES6+)</li>
-            <li class="aside__item">Базовые знания React</li>
-            <li class="aside__item">Gulp, Webpack</li>
-            <li class="aside__item">jQuery</li>
-            <li class="aside__item">Git, GitHub</li>
-            <li class="aside__item">Figma</li>
+            <li class="resume__item resume__item--projects">
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">
+                  <a target="_blank" href="https://irinapyanova.github.io/Scooter-shop/"
+                    class="resume__project-link">Scooter Shop</a>
+                </h4>
+                <p class="resume__text-info">Базовый одностраничный лендинг, сверстанный с БЭМ на SCSS с использованием
+                  Gulp.</p>
+              </div>
+            </li>
+
+            <li class="resume__item resume__item--projects">
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">
+                  <a target="_blank" href="https://irinapyanova.github.io/butterfly-shop-pyanova/"
+                    class="resume__project-link">Butterfly Shop</a>
+                </h4>
+                <p class="resume__text-info">Многостраничный сайт, сверстан во время обучения в школе Бруноям. При
+                  работе впервые столкнулась с адаптивным дизайном (desktop-first), SCSS, JavaScript(jQuery) (создание
+                  меню навигациии на мобильной версии, слайдер с помощью плагина Slick и другое).</p>
+              </div>
+            </li>
+
+            <li class="resume__item resume__item--projects">
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">
+                  <a target="_blank" href="https://irinapyanova.github.io/Table-JS/"
+                    class="resume__project-link">JavaScript Table</a>
+                </h4>
+                <p class="resume__text-info">Приложение для работы с таблицей. Реализованы: функция фильтрации данных,
+                  возможность скрытия колонок и редактирование данных ячеек. Первая самостоятельная работа с
+                  HTML-таблицами, fetch API, алгоритмом сортировки, постраничным выводом данных.</p>
+              </div>
+            </li>
           </ul>
         </div>
-      </aside>
-    </div>
-  </body>
+
+        <div class="resume__section">
+          <h3 class="resume__section-title">Образование и курсы</h3>
+          <ul class="resume__list">
+
+            <li class="resume__item">
+              <span class="resume__year">2021</span>
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">Курс в школе Бруноям - "Веб-разработчик с нуля"</h4>
+                <p class="resume__text-info">Изучение верстки, SCSS, адаптивный дизайн, базовые знания по JavaScript,
+                  работа с jQuery</p>
+                <a href="files/certificate-pyanova.pdf" class="diploma-link">Электронный сертификат</a>
+              </div>
+            </li>
+
+            <li class="resume__item">
+              <span class="resume__year">2022</span>
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">Курс Ивана Петриченко на Udemy - "Полный курс по JavaScript + React"</h4>
+                <p class="resume__text-info">Изучение всех основных концепций JavaScript и React c закреплением
+                  информации на практике. На данный момент закончила раздел по JS, начала изучать React.</p>
+                <a href="https://www.udemy.com/course/javascript_full/" class="diploma-link">Ссылка на курс</a>
+              </div>
+            </li>
+
+            <li class="resume__item">
+              <span class="resume__year">2014 - 2021</span>
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">Северо-Западный государственный медицинский университет имени И. И.
+                  Мечникова</h4>
+                <p class="resume__text-info">Специальность: лечебное дело</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resume__section">
+          <h3 class="resume__section-title">Опыт работы</h3>
+          <ul class="resume__list">
+            <li class="resume__item">
+              <span class="resume__year">2022</span>
+              <i class="resume__icon"></i>
+              <div class="resume__text">
+                <h4 class="resume__text-title">Пока пусто</h4>
+                <p class="resume__text-info">Здесь должно что-то появиться</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <aside class="aside">
+      <div class="aside__section">
+        <h3 class="aside__title">О себе</h3>
+        <p class="aside__text">Меня зовут Ира, мне 25 и я frontend-разработчик.
+          В сфере web-разработки меня вдохновляют
+          возможность постоянно развиваться, совершенствоваться и создавать продукты,
+          полезные для людей. </p>
+      </div>
+      <div class="aside__section">
+        <h3 class="aside__title">Связь со мной</h3>
+        <ul class="contacts">
+          <li class="contact__item">
+            <i class="contact__item-icon" style="background-image: url('img/icon-phone.svg');"></i>
+            <a href="tel:+79052877853" class="contacts__item-link">+7 (905)
+              287-78-53</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__item-icon" style="background-image: url('img/icon-mail.svg');"></i>
+            <a href="mailto:kizaru001@gmail.com" class="contacts__item-link">kizaru001@gmail.com</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__item-icon" style="background-image: url('img/icon-github.svg');"></i>
+            <a target="_blank" href="https://github.com/irinapyanova" class="contacts__item-link">GitHub</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="aside__section">
+        <h3 class="aside__title">Языки</h3>
+        <p class="aside__text">Английский - B2 (Upper-Intermediate)</p>
+      </div>
+
+      <div class="aside__section">
+        <h3 class="aside__title">Навыки</h3>
+        <ul class="aside__list">
+          <li class="aside__item">HTML5, CSS3</li>
+          <li class="aside__item">Адаптивный дизайн</li>
+          <li class="aside__item">SCSS</li>
+          <li class="aside__item">Git, GitHub</li>
+          <li class="aside__item">jQuery</li>
+          <li class="aside__item">БЭМ</li>
+          <li class="aside__item">JavaScript (ES6+)</li>
+          <li class="aside__item">Базовые знания React</li>
+          <li class="aside__item">Gulp, Webpack</li>
+          <li class="aside__item">Figma</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+
 </html>

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
 .container {
@@ -19,17 +19,18 @@
 
 .lead {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: column;
   margin-bottom: 50px;
 }
 
 .lead__info {
-  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .lead__title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
@@ -38,11 +39,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.lead__name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
 .lead__heading {
-  margin-bottom: 30px;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .contacts {
@@ -61,6 +66,7 @@
   height: 20px;
   margin-right: 10px;
   background-size: contain;
+  filter: brightness(10);
 }
 
 .contacts__item-link {
@@ -69,23 +75,25 @@
 }
 
 .contacts__item-link:hover {
-  background: -webkit-linear-gradient(225deg, #4451a3 60%, #00b1e7 79%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
 }
 
 .lead__pic {
   width: 300px;
-  height: 300px;
+  max-width: 150px;
+  border-radius: 999px;
 }
 
 .resume__section {
-  margin-bottom: 40px;
+  margin-bottom: 5rem;
+}
+
+.resume__section:last-child {
+  margin-bottom: 0;
 }
 
 .resume__section-title {
-  margin-left: 105px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background: -webkit-linear-gradient(225deg, #4450a2 60%, #00b1e7 79%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,7 +134,7 @@
 }
 
 .resume__text-title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   font-weight: 700;
@@ -138,7 +146,7 @@
 
 .diploma-link {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 5px;
   color: inherit;
 }
 
@@ -160,6 +168,10 @@
   background: -webkit-linear-gradient(225deg, #4451a3 60%, #00b1e7 79%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#projects .resume__item {
+  justify-content: flex-start;
 }
 
 .aside {
@@ -205,12 +217,22 @@
   }
 
   .lead__info {
+    flex-direction: column;
     margin: 20px 0 40px 0;
   }
 
-  .contacts {
-    max-width: 240px;
-    margin: 0 auto;
+  .lead__name {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .lead__pic {
+    max-width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .lead__title {
+    font-size: 25px;
   }
 
   .resume__section-title {
